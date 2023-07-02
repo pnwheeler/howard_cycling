@@ -40,7 +40,7 @@
         align-self: center;
         width: max-content;
         color: var(--color-light);
-        background-color: var(--color-darker);
+        background-color: var(--color-darkest);
         height: 1.5em;
         margin-left: 0.5em;
         width: fit-content;
