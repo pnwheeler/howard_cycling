@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Roboto Flex';
     src: url('/fonts/RobotoFlex.woff2') format('woff2');
-    font-weight: 200 700;
 }
 :root {
     /* Font types */
@@ -151,24 +150,9 @@ a[target=_blank]::after{
     top: 0.2em;
     zoom: 0.7;
 }
-
-/* Styles for navigation */
-.nav-variant, .nav-grad{
-    --wdth: 100;
-    --grad: 0;
-    --xtra: 0;
-    --wght: 500;
-    font-variation-settings:
-        "wdth" var(--wdth),
-        "GRAD" var(--grad),
-        "XTRA" var(--xtra),
-        "wght" var(--wght),
-        "YTUC" var(--ytuc);
+.nav-variant{
+    font-variation-settings: "GRAD" 0, "XTRA" 0, "wght" 500, "wdth" 100;
 }
-.nav-grad{
-    --ytuc: 712;
-}
-
 .special-variant {
     font-variation-settings: "slnt" -10, "GRAD" 400, "XTRA" 490, "wght" 800, "wdth" 100;
 }

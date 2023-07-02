@@ -22,7 +22,7 @@
     
     $:routeId = $page.route.id;
     // Reduce emphasis on navbar when we have pages with nested page layouts
-    $:disabled = (routeId === '/teaminfo');
+    $:disabled = (routeId === '/teaminfo' && !mobileMenu);
 </script>
 
 
@@ -33,18 +33,15 @@
 <nav bind:clientWidth={w} class="nav-bar nav-variant" class:greyscale={disabled} aria-controls="primary-navigation">
     {#if mobileMenu}
         <button class:open id="menu-button" on:click={handleMobileIconClick}>
-            {#key open}
-                {#if open}
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" fill="currentColor" stroke="currentColor"><path d="M481.333-421.334 279.666-219.667q-13.333 13.333-30.333 13.333t-29.666-13.333q-13.333-12.666-13.333-29.5 0-16.833 13.333-29.499l202.667-202.667L218.667-684Q206-696.667 206-713.333q0-16.667 12.667-29.334 12.666-12.666 29.5-12.666 16.833 0 30.166 12.666L480-541.333l201-201Q693.667-755 710.667-755T741-742.333Q753.666-729 753.666-711.5T741-681.334L539.666-479.667l201.667 202.334Q753.666-265 753.666-248t-12.333 29.333Q729-206.334 712.167-206.334t-28.5-12.333L481.333-421.334Z"/></svg>
-                {:else}
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" fill="currentColor" stroke="currentColor"><path d="M150.333-225.334q-17.833 0-30.083-12.406T108-267.573q0-17.427 12.25-29.593 12.25-12.167 30.083-12.167h661.334q17.183 0 29.425 12.284 12.241 12.283 12.241 29.71t-12.241 29.716q-12.242 12.289-29.425 12.289H150.333Zm0-213.333q-17.833 0-30.083-12.406Q108-463.48 108-480.906q0-17.427 12.25-29.594 12.25-12.166 30.083-12.166h661.334q17.183 0 29.425 12.283 12.241 12.284 12.241 29.711 0 17.426-12.241 29.716-12.242 12.289-29.425 12.289H150.333Zm0-212q-17.833 0-30.083-12.406Q108-675.48 108-692.907q0-17.426 12.25-29.593 12.25-12.166 30.083-12.166h661.334q17.183 0 29.425 12.283 12.241 12.284 12.241 29.71 0 17.427-12.241 29.717-12.242 12.289-29.425 12.289H150.333Z"/></svg>
-                {/if}
-            {/key}
+            {#if open}
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" fill="currentColor" stroke="currentColor"><path d="M481.333-421.334 279.666-219.667q-13.333 13.333-30.333 13.333t-29.666-13.333q-13.333-12.666-13.333-29.5 0-16.833 13.333-29.499l202.667-202.667L218.667-684Q206-696.667 206-713.333q0-16.667 12.667-29.334 12.666-12.666 29.5-12.666 16.833 0 30.166 12.666L480-541.333l201-201Q693.667-755 710.667-755T741-742.333Q753.666-729 753.666-711.5T741-681.334L539.666-479.667l201.667 202.334Q753.666-265 753.666-248t-12.333 29.333Q729-206.334 712.167-206.334t-28.5-12.333L481.333-421.334Z"/></svg>
+            {:else}
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40" fill="currentColor" stroke="currentColor"><path d="M150.333-225.334q-17.833 0-30.083-12.406T108-267.573q0-17.427 12.25-29.593 12.25-12.167 30.083-12.167h661.334q17.183 0 29.425 12.284 12.241 12.283 12.241 29.71t-12.241 29.716q-12.242 12.289-29.425 12.289H150.333Zm0-213.333q-17.833 0-30.083-12.406Q108-463.48 108-480.906q0-17.427 12.25-29.594 12.25-12.166 30.083-12.166h661.334q17.183 0 29.425 12.283 12.241 12.284 12.241 29.711 0 17.426-12.241 29.716-12.242 12.289-29.425 12.289H150.333Zm0-212q-17.833 0-30.083-12.406Q108-675.48 108-692.907q0-17.426 12.25-29.593 12.25-12.166 30.083-12.166h661.334q17.183 0 29.425 12.283 12.241 12.284 12.241 29.71 0 17.427-12.241 29.717-12.242 12.289-29.425 12.289H150.333Z"/></svg>
+            {/if}
         </button>
         {#if open}
             <div class="mobile" class:open 
-            in:fly|local={{duration: 400, x: 500, easing:quartInOut}}
-            out:slide|local={{duration:700, easing:quartInOut}}
+            transition:fly|local={{duration: 1000, x: 500, easing:quartInOut}}
             >
                 {#each links as {href, name}}
                     <a class="nav-grad" class:active={routeId == href} {href} on:click={handleMobileIconClick}>{name}</a>
@@ -67,7 +64,7 @@
         font-size: min(2.3vw, 1em);
         gap: 1em;
         padding: min(1vh, 1em);
-        text-shadow: 0.1rem 0.1rem var(--color-lighter);
+        text-shadow: 0.15rem 0.15rem var(--color-lighter);
     }
     .title > img{
         display: flex;
@@ -100,6 +97,7 @@
         width: var(--icon-size);
         align-items: center;
         justify-self: end;
+        margin-right: 0.25em;
         border:none;
         padding: none;
         color: white;
@@ -111,10 +109,10 @@
         height: auto;
     }
     #menu-button.open svg{
-        color: var(--color-disabled);
+        color: var(--color-blue);
     }
     #menu-button svg{
-        color: var(--color-blue);
+        color: var(--color-disabled);
     }
     .mobile{
         display: none;
@@ -131,8 +129,8 @@
         height: 100vh;
         z-index: 10;
     }
-    .mobile.open > a::after{
-        width: 200px;
+    .mobile> a::after{
+        display: none;
     }
     a {
         cursor: pointer;
@@ -168,7 +166,7 @@
         opacity: 1;
     }
     a.active{
-        --grad: 100;
+        font-variation-settings: "GRAD" 100, "XTRA" 0, "wght" 500, "wdth" 100;
         color: white;
     }
     a.active::after{

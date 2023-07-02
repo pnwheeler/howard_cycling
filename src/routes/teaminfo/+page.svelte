@@ -15,7 +15,7 @@
 <nav class="sub-nav nav-variant" aria-controls="secondary-navigation">
     {#each subpages as subpage, i}
         <button 
-        class="nav-tab nav-grad"
+        class="nav-tab"
         class:active={active.name === subpage.name}
         on:click={() => active = subpages[i]}>
             {subpage.name}
@@ -55,23 +55,25 @@
         transition: all .3s ease;
     }
     button:hover {
-        --grad: 100;
+        font-variation-settings: "GRAD" 50, "XTRA" 0, "wght" 500, "wdth" 100;
         color: var(--color-lighter);   
         box-shadow: 0 0 0 .1em var(--color-disabled); 
     }
     button.active {
-        --grad: 100;
+        font-variation-settings: "GRAD" 100, "XTRA" 0, "wght" 500, "wdth" 100;
         background-color: var(--color-blue);
         box-shadow: 0 0 0 .1rem var(--color-blue);
         color: white;
     }
-    @media (max-width: 900px){
+    @media (max-width: 670px){
         .sub-nav{
+            gap: unset;
             grid-template-columns: repeat(3, auto);
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         .sub-nav button{
-            width:fit-content;
+            width: fit-content;
+            padding-inline: 0.5em;
         }
     }
 </style>

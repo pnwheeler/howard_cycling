@@ -125,7 +125,7 @@ const Activities = create_ssr_component(($$result, $$props, $$bindings, slots) =
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".sub-nav.svelte-1wzd1r0.svelte-1wzd1r0{display:grid;grid-template-columns:repeat(3, 200px);justify-content:center;padding-block:0.5em;place-items:center;font-size:1.3em}button.svelte-1wzd1r0.svelte-1wzd1r0{display:flex;justify-content:center;cursor:pointer;border:none;border-radius:1em;width:150px;text-transform:uppercase;--grad:10;color:var(--color-light);background-color:var(--color-dark);transition:all .3s ease}button.svelte-1wzd1r0.svelte-1wzd1r0:hover{--grad:100;color:var(--color-lighter);box-shadow:0 0 0 .1em var(--color-disabled)}button.active.svelte-1wzd1r0.svelte-1wzd1r0{--grad:100;background-color:var(--color-blue);box-shadow:0 0 0 .1rem var(--color-blue);color:white}@media(max-width: 900px){.sub-nav.svelte-1wzd1r0.svelte-1wzd1r0{grid-template-columns:repeat(3, auto);justify-content:space-between}.sub-nav.svelte-1wzd1r0 button.svelte-1wzd1r0{width:fit-content}}",
+  code: '.sub-nav.svelte-1kuxmiw.svelte-1kuxmiw{display:grid;grid-template-columns:repeat(3, 200px);justify-content:center;padding-block:0.5em;place-items:center;font-size:1.3em}button.svelte-1kuxmiw.svelte-1kuxmiw{display:flex;justify-content:center;cursor:pointer;border:none;border-radius:1em;width:150px;text-transform:uppercase;--grad:10;color:var(--color-light);background-color:var(--color-dark);transition:all .3s ease}button.svelte-1kuxmiw.svelte-1kuxmiw:hover{font-variation-settings:"GRAD" 50, "XTRA" 0, "wght" 500, "wdth" 100;color:var(--color-lighter);box-shadow:0 0 0 .1em var(--color-disabled)}button.active.svelte-1kuxmiw.svelte-1kuxmiw{font-variation-settings:"GRAD" 100, "XTRA" 0, "wght" 500, "wdth" 100;background-color:var(--color-blue);box-shadow:0 0 0 .1rem var(--color-blue);color:white}@media(max-width: 670px){.sub-nav.svelte-1kuxmiw.svelte-1kuxmiw{gap:unset;grid-template-columns:repeat(3, auto);justify-content:space-evenly}.sub-nav.svelte-1kuxmiw button.svelte-1kuxmiw{width:fit-content;padding-inline:0.5em}}',
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -145,11 +145,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.subpages(subpages);
   $$result.css.add(css);
   active = subpages[1];
-  return `<nav class="sub-nav nav-variant svelte-1wzd1r0" aria-controls="secondary-navigation">${each(subpages, (subpage, i) => {
-    return `<button class="${[
-      "nav-tab nav-grad svelte-1wzd1r0",
-      active.name === subpage.name ? "active" : ""
-    ].join(" ").trim()}">${escape(subpage.name)}
+  return `<nav class="sub-nav nav-variant svelte-1kuxmiw" aria-controls="secondary-navigation">${each(subpages, (subpage, i) => {
+    return `<button class="${["nav-tab svelte-1kuxmiw", active.name === subpage.name ? "active" : ""].join(" ").trim()}">${escape(subpage.name)}
         </button>`;
   })}</nav>
 
