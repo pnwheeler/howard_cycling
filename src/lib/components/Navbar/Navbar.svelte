@@ -104,19 +104,17 @@
         padding: none;
         color: white;
         background-color: transparent;
-        transition: all .4s ease-in-out;
+    }
+    svg{
+        min-width: 1.5em;
+        width: 1.5em;
+        height: auto;
     }
     #menu-button.open svg{
-        transform: scale(1.3);
         color: var(--color-disabled);
     }
     #menu-button svg{
-        height: fit-content;
-        transform: scale(1.3);
         color: var(--color-blue);
-    }
-    #menu-button:active{
-        transform: scale(0);
     }
     .mobile{
         display: none;
