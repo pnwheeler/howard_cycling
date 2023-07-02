@@ -1,7 +1,7 @@
 <script>
     import { fly, fade } from 'svelte/transition';
     import { onMount } from 'svelte';
-    import './styles.css';
+    import '../styles.css';
     
     import { Navbar } from '$lib/components/Navbar';
     export let data;
