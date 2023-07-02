@@ -7,6 +7,7 @@
     export let data;
     let ready = false;
     onMount(() => ready = true);
+    export const prerender = true;
 </script>
 {#if ready}
     <div class="main-layout">

@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Roboto Flex';
-    src: url('RobotoFlex[GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght].ttf') format('woff2');
+    src: url('fonts/RobotoFlex.woff2') format('woff2');
+    font-weight: 200 700;
 }
 :root {
     /* Font types */
