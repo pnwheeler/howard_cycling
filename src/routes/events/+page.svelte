@@ -114,6 +114,7 @@
     }
     #note{
         justify-self: center;
+        font-size: small;
     }
     @media (max-width: 900px){
         .events-grid{

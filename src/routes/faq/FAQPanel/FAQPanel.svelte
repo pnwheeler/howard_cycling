@@ -62,9 +62,8 @@
 </div>
 <style>
     .panel-container{
-        padding-top: 0.5em;
+        padding-block: 0.5em;
         padding-inline: 1em;
-		margin-top: 0.5em;
         overflow: hidden;
     }
     .panel-h{

@@ -7,20 +7,31 @@
     export let data;
     let ready = false;
     onMount(() => ready = true);
-    export const prerender = true;
+    let w = 100;
+    const mobileWidth = 900;
+    $:mobile = (w < mobileWidth) ? true : false;
+    let open = false;
 </script>
+
 {#if ready}
-    <div class="main-layout">
-        <Navbar/>
-        <main>
-            {#key data.url}
-                <div 
-                in:fly|local={{x: -100, duration: 500, delay: 500}}
-                out:fade>
-                    <slot/>
-                </div>
-            {/key}
-        </main>
+    <div class="main-layout" bind:clientWidth={w}>
+        <Navbar mobile={mobile} open={open}/>
+            <main class:mobile>
+                {#if mobile}
+                    {#key data.url}
+                        <slot/>
+                    {/key}
+                {:else}
+                    {#key data.url}
+                        <div 
+                        in:fly|local={{x: -100, duration: 500, delay: 500}}
+                        out:fade>
+                            <slot/>
+                        </div>
+                    {/key}
+                {/if}
+            </main>
+        
         <footer class="footer">
             <h1 class="special-variant">Howard Cycling Club</h1>
             <smaller>Find our socials @</smaller>
@@ -44,6 +55,9 @@
         padding-inline: 1em;
         padding-bottom: 1em;
         overflow-x: hidden;
+    }
+    main.mobile{
+        padding-top: 4em;
     }
     /* Positioning classes */
     .main-layout {
