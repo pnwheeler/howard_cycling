@@ -1,23 +1,24 @@
 <script>
     import { page } from "$app/stores";
-    import MobileMenu from "./MobileMenu.svelte";
+    import HamburgerButton from "./HamburgerButton.svelte";
     import { fade, fly} from 'svelte/transition';
     import { quartInOut, quartOut } from "svelte/easing";
+
     
     const links = [
-        { href:'/', name:'home'}, 
-        { href:'/events', name:'events'},
-        { href:'/registration', name:'registration'},
-        { href:'/coaches', name:'coaches'}, 
-        { href:'/faq', name:'faq'}, 
-        { href:'/teaminfo', name:'team info'},   
-        { href:'/photos', name:'photos'}
+        { href:'/', name:'home', id: 0}, 
+        { href:'/events', name:'events', id: 1},
+        { href:'/registration', name:'registration', id:2},
+        { href:'/coaches', name:'coaches', id:3}, 
+        { href:'/faq', name:'faq', id:4}, 
+        { href:'/teaminfo', name:'team info', id:5},   
+        { href:'/photos', name:'photos', id:6}
     ];
    
     export let open = false;
     export let mobile = false;
     export let onClick = () => (open = !open);
-    export let selected = links[0];
+    $: index = links.findIndex(link => link.href == routeId);
     $:routeId = $page.route.id;
     // Reduce emphasis on navbar when we have pages with nested page layouts
     $:disabled = (routeId === '/teaminfo' && !mobile);
@@ -29,16 +30,18 @@
     <div class="mobile-container">
         <div class="sticky-bar">
             <span class="mobile-heading">
-                Howard Cycling Club <span style="color: var(--color-blue);">&blacktriangleright;</span> {selected.name}
+                Howard Cycling Club <span style="color: var(--color-blue);">&blacktriangleright; 
+                    {links[index].name}
+                </span>
             </span> 
-            <MobileMenu {open} {onClick} width={50}/>
+            <HamburgerButton {open} {onClick} width={50}/>
         </div>
         {#if open}
-            <nav class="mobile-overlay nav-variant" class:open 
-            in:fly|local={{duration: 700, x: 500, delay: 0, easing:quartOut}}
+            <nav class="mobile-overlay" class:open 
+            in:fly|local={{duration: 700, x: 500, delay: 200, easing:quartOut}}
             out:fly|local={{duration: 1000, x: 500, delay: 300, easing:quartInOut}}>
-                {#each links as {href, name}, i}
-                    <a class:active={routeId == href} {href} on:click={onClick} on:click={()=>(selected = links[i])}>{name}</a>
+                {#each links as {href, name, id}}
+                    <a class:active={routeId == href} {href} on:click={onClick}>{name}</a>
                 {/each}
             </nav>
         {/if}
@@ -48,7 +51,7 @@
         <h1 class="special-variant" transition:fade={{duration: 1000}}>Howard Cycling Club</h1>
         <img transition:fly={{duration: 1000, delay: 300, x: 100}} src='/img/HowardLion_Vectorized.png' alt="logo"/>
     </div>
-    <nav class="nav-bar nav-variant" class:greyscale={disabled} aria-controls="primary-navigation">
+    <nav class="nav-bar" class:greyscale={disabled} aria-controls="primary-navigation">
         {#each links as {href, name}}
             <a class:active={routeId == href} {href}>{name}</a>
         {/each}
@@ -61,7 +64,6 @@
         background-color: var(--color-darkest);
         justify-content: center;
         align-items: center;
-        font-size: min(2.3vw, 1em);
         gap: 1em;
         padding: min(1vh, 1em);
         text-shadow: 0.15rem 0.15rem var(--color-lighter);
@@ -77,11 +79,11 @@
 /* ----------------------mobile version-------------------*/  
     .mobile-container{
         position: fixed;
-        top: 0;
-        width: 100%;
+        top: -0.1em;
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        z-index: 10;
+        z-index: 2;
     }
     .sticky-bar{
         display: flex;
@@ -89,7 +91,7 @@
         justify-content: space-between;
         height: 3.5em;
         box-shadow: 0 0.1rem 0 0 var(--color-blue); 
-        background-color: var(--color-darker);
+        background-color: var(--color-darkest);
     }
     .mobile-heading{
         padding-left: 1em; 
@@ -105,7 +107,7 @@
         display: flex;
         background-color: var(--color-dark);
         flex-direction: column;
-        height: 100vh;
+        height: 100dvh;
         width: 100vw;
         top: 3.5em;
         z-index: 11;
@@ -113,6 +115,7 @@
         overflow: hidden;
     }
     .mobile-overlay a{
+        font-variation-settings: "GRAD" 0, "XTRA" 0, "wght" 500, "wdth" 100;
         margin-right: 0.5em;
         padding-right: 0.5em;
         justify-content: end;
@@ -124,6 +127,7 @@
     }
     .mobile-overlay a.active{
         font-variation-settings: "GRAD" 100, "XTRA" 0, "wght" 500, "wdth" 100;
+        /* "wdth" 115, "wght" 350, "GRAD" 50; */
         color: white;
         box-shadow: 0.1em 0 0 var(--color-blue); 
     }
@@ -146,6 +150,7 @@
     .nav-bar a {
         cursor: pointer;
         z-index: 2;
+        font-variation-settings: "GRAD" 0, "XTRA" 0, "wght" 500, "wdth" 100;
         justify-content: center;
         justify-self: stretch;
         text-decoration: none;

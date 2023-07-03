@@ -7,6 +7,7 @@
     export let width = 100;
 </script>
 <button class="btn" on:click={onClick} aria-expanded={open} aria-label={ariaLabel}>
+    <rect {width} height="100"/>
     <svg class:open
         {width}
         viewBox="0 0 100 100"
@@ -40,23 +41,26 @@
         background-color: transparent;
         border:none;
     }
+    .open, .top, .middle, .bottom{
+        transition: all .2s .2s ease;
+    }
     .top{
         color: rgb(141, 141, 141);
         stroke-dasharray: 60 139;
-        transition: all .2s .2s ease;
+        
     }
     .middle{
         color: rgb(107, 107, 107);
-        stroke-dasharray: 40 10;
-        stroke-dashoffset: -20;
-        transition: stroke-dasharray .4s .2s ease,
+        stroke-dasharray: 50 60;
+        stroke-dashoffset: -10;
+        /* transition: stroke-dasharray .4s .2s ease,
                     stroke-dashoffset.4s ease,
-                    color .2s;
+                    color .2s; */
     }
     .bottom{
         color: rgb(70, 70, 70);
         stroke-dasharray: 60 139;
-        transition: all .2s ease; 
+        /* transition: all .2s ease;  */
     }
     .open .top{
         stroke-width: 10px;
@@ -64,7 +68,7 @@
         stroke-dashoffset: -60; */
         stroke-dasharray: 57 70;
         stroke-dashoffset: -70;
-        color: rgb(192, 0, 0);
+        color: rgb(158, 0, 0);
     }
     .open .middle{
         stroke-dasharray: 1 60;
@@ -77,7 +81,7 @@
         stroke-dashoffset: -60; */
         stroke-dasharray: 57 70;
         stroke-dashoffset: -70;
-        color: rgb(192, 0, 0);
+        color: rgb(158, 0, 0);
     }
     /* .opened .top{
 

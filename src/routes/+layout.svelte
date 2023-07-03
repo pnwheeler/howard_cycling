@@ -34,7 +34,7 @@
         
         <footer class="footer">
             <h1 class="special-variant">Howard Cycling Club</h1>
-            <smaller>Find our socials @</smaller>
+            <smaller>Follow us on social media!</smaller>
             <div id="socials">
                 <a href="https://www.facebook.com"> 
                     <img src="/icons/fb_logo.png" alt="facebook"/>
@@ -74,14 +74,15 @@
             1fr;
     }
     .footer{
-        background-color: var(--color-dark);
-        color: var(--color-darkest);
+        background-color: var(--color-darkest);
+        
     }
     .footer > h1 {
         text-transform: uppercase;
         font-size: 2em;
         grid-column: span 3;
-        text-shadow: 0.1rem 0.1rem var(--color-blue);
+        color: var(--color-blue);
+        text-shadow: 0.1rem 0.1rem var(--color-lighter);
     }
     #socials {
         display: flex;
@@ -90,15 +91,17 @@
         padding-block:1em;
     }
     smaller {
-        color: var(--color-light);
+        color: var(--color-disabled);
     }
     a {
         width: 30px;
         background-color: transparent;
         border: none;
         background-size: contain;
+        transform: scale(1);
+        transition: transform .2s ease;
     }
     a:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
     }
 </style>

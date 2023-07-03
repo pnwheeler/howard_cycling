@@ -154,9 +154,6 @@ a[target=_blank]::after{
     height: 1em;
     color: red;
 }
-.nav-variant{
-    font-variation-settings: "GRAD" 0, "XTRA" 0, "wght" 500, "wdth" 100;
-}
 .special-variant {
     font-variation-settings: "slnt" -10, "GRAD" 400, "XTRA" 490, "wght" 800, "wdth" 100;
 }

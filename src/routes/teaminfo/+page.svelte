@@ -12,7 +12,7 @@
     $: active = subpages[1];
 </script>
 
-<nav class="sub-nav nav-variant" aria-controls="secondary-navigation">
+<nav class="sub-nav" aria-controls="secondary-navigation">
     {#each subpages as subpage, i}
         <button 
         class="nav-tab"
@@ -52,10 +52,10 @@
         --grad: 10;
         color: var(--color-light);
         background-color: var(--color-dark);
+        font-variation-settings: "GRAD" 0, "XTRA" 0, "wght" 500, "wdth" 100;
         transition: all .3s ease;
     }
     button:hover {
-        font-variation-settings: "GRAD" 50, "XTRA" 0, "wght" 500, "wdth" 100;
         color: var(--color-lighter);   
         box-shadow: 0 0 0 .1em var(--color-disabled); 
     }
