@@ -166,11 +166,12 @@ const css = {
 };
 const FAQPanel = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let active;
-  let width;
   let vertical;
+  let { width = 0 } = $$props;
+  if ($$props.width === void 0 && $$bindings.width && width !== void 0)
+    $$bindings.width(width);
   $$result.css.add(css);
   active = items[0];
-  width = 0;
   vertical = width < 1180 ? true : false;
   return `<div class="panel-container svelte-v6g2um">${vertical ? `<div class="panel-v svelte-v6g2um">${each(items, (item, i) => {
     return `<button class="${["text-left svelte-v6g2um", active.question === item.question ? "open" : ""].join(" ").trim()}"><span class="num svelte-v6g2um">${escape(i + 1)}.</span><span><!-- HTML_TAG_START -->${item.question}<!-- HTML_TAG_END --></span>

@@ -4,7 +4,7 @@
 	import { quartInOut } from "svelte/easing";
     
     $: active = items[0];
-    $: width = 0;
+    let width = 1980;
     
     $:vertical = (width < 1180) ? true : false;
 </script>
@@ -31,7 +31,7 @@
                 {/if}
             {/each}
         </div>
-{:else}
+    {:else}
     <div class="panel-h">
         {#each items as item, i}
             <div class="question-area">
