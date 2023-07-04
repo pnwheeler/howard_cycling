@@ -10,7 +10,7 @@
     <rect {width} height="100"/>
     <svg class:open
         {width}
-        viewBox="0 0 101 101"
+        viewBox="0 0 100 100"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -41,30 +41,25 @@
         border:none;
     }
     .open, .top, .middle, .bottom{
-        transition: all .2s .2s ease;
+        transition: all .3s .3s ease;
     }
     .top{
         color: rgb(141, 141, 141);
-        stroke-dasharray: 60 139;
+        stroke-dasharray: 59 139;
         
     }
     .middle{
         color: rgb(107, 107, 107);
-        stroke-dasharray: 50 60;
+        stroke-dasharray: 49 60;
         stroke-dashoffset: -10;
-        /* transition: stroke-dasharray .4s .2s ease,
-                    stroke-dashoffset.4s ease,
-                    color .2s; */
     }
     .bottom{
         color: rgb(70, 70, 70);
-        stroke-dasharray: 60 139;
+        stroke-dasharray: 59 139;
         /* transition: all .2s ease;  */
     }
     .open .top{
         stroke-width: 10px;
-        /* stroke-dasharray: 139 60;
-        stroke-dashoffset: -60; */
         stroke-dasharray: 57 70;
         stroke-dashoffset: -70;
         color: rgb(158, 0, 0);
@@ -76,8 +71,6 @@
     }
     .open .bottom{
         stroke-width: 10px;
-        /* stroke-dasharray: 139 60;
-        stroke-dashoffset: -60; */
         stroke-dasharray: 57 70;
         stroke-dashoffset: -70;
         color: rgb(158, 0, 0);

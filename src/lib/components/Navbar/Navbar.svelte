@@ -38,7 +38,7 @@
         </div>
         {#if open}
             <nav class="mobile-overlay" class:open 
-            in:fly|local={{duration: 700, x: 500, delay: 200, easing:quartOut}}
+            in:fly|local={{duration: 900, x: 500, delay: 200, easing:quartOut}}
             out:fly|local={{duration: 1000, x: 500, delay: 300, easing:quartInOut}}>
                 {#each links as {href, name, id}}
                     <a class:active={routeId == href} {href} on:click={onClick}>{name}</a>
@@ -79,7 +79,7 @@
 /* ----------------------mobile version-------------------*/  
     .mobile-container{
         position: fixed;
-        top: -0.1em;
+        top: -0.2em;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -90,7 +90,7 @@
         align-items: center;
         justify-content: space-between;
         height: 3.5em;
-        box-shadow: 0 0.1rem 0 0 var(--color-blue); 
+        border-bottom: 0.15rem solid var(--color-blue); 
         background-color: var(--color-darkest);
     }
     .mobile-heading{
@@ -107,7 +107,7 @@
         display: flex;
         background-color: var(--color-dark);
         flex-direction: column;
-        height: 100lvh;
+        min-height: 100lvh; 
         width: 100%;
         top: 0;
         z-index: 3;
