@@ -1,6 +1,7 @@
 <script>
     import { fly, fade, slide } from "svelte/transition";
     import { items } from "../Answers/answersData";
+	import { quartInOut } from "svelte/easing";
     
     $: active = items[0];
     $: width = 0;
@@ -24,7 +25,7 @@
                     </span>
                 </button>
                 {#if active.question === item.question}
-                    <div class="pane border-blue bg-dark div-block" transition:slide>
+                    <div class="pane border-blue bg-dark div-block" transition:slide={{duration: 700, easing: quartInOut}}>
                         <svelte:component this={active.component}/>
                     </div>  
                 {/if}

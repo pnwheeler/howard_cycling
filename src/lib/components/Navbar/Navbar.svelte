@@ -83,7 +83,7 @@
         width: 100vw;
         display: flex;
         flex-direction: column;
-        z-index: 2;
+        z-index: 4;
     }
     .sticky-bar{
         display: flex;
@@ -103,19 +103,19 @@
     }
     .mobile-overlay.open{
         padding-top: 2em;
-        position:absolute;
+        position:relative;
         display: flex;
         background-color: var(--color-dark);
         flex-direction: column;
-        height: 100dvh;
-        width: 100vw;
-        top: 3.5em;
-        z-index: 11;
+        height: 100lvh;
+        width: 100%;
+        top: 0;
+        z-index: 3;
         gap: 1em;
         overflow: hidden;
     }
     .mobile-overlay a{
-        font-variation-settings: "GRAD" 0, "XTRA" 0, "wght" 500, "wdth" 100;
+        font-variation-settings: "GRAD" 0, "XTRA" 380, "wght" 500, "wdth" 60;
         margin-right: 0.5em;
         padding-right: 0.5em;
         justify-content: end;
@@ -126,7 +126,7 @@
         
     }
     .mobile-overlay a.active{
-        font-variation-settings: "GRAD" 100, "XTRA" 0, "wght" 500, "wdth" 100;
+        font-variation-settings: "GRAD" 100, "XTRA" 380, "wght" 500, "wdth" 60;
         /* "wdth" 115, "wght" 350, "GRAD" 50; */
         color: white;
         box-shadow: 0.1em 0 0 var(--color-blue); 

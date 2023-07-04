@@ -10,9 +10,8 @@
     <rect {width} height="100"/>
     <svg class:open
         {width}
-        viewBox="0 0 100 100"
+        viewBox="0 0 101 101"
         version="1.1"
-        id="svg5"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         stroke="currentColor"

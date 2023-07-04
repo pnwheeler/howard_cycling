@@ -52,7 +52,7 @@
         --grad: 10;
         color: var(--color-light);
         background-color: var(--color-dark);
-        font-variation-settings: "GRAD" 0, "XTRA" 0, "wght" 500, "wdth" 100;
+        font-variation-settings: "GRAD" 0, "XTRA" 380, "wght" 500, "wdth" 60;
         transition: all .3s ease;
     }
     button:hover {
@@ -60,7 +60,7 @@
         box-shadow: 0 0 0 .1em var(--color-disabled); 
     }
     button.active {
-        font-variation-settings: "GRAD" 100, "XTRA" 0, "wght" 500, "wdth" 100;
+        font-variation-settings: "GRAD" 100, "XTRA" 380, "wght" 500, "wdth" 60;
         background-color: var(--color-blue);
         box-shadow: 0 0 0 .1rem var(--color-blue);
         color: white;

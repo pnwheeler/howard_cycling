@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Roboto Flex';
     src: url('/fonts/RobotoFlex.woff2') format('woff2');
+    font-variation-settings: "wdth" 115, "wght" 350, "GRAD" 50;
 }
 :root {
     /* Font types */
@@ -76,7 +77,7 @@ body {
     height: 100%;
     /* min-width: 1165px; */
     font-family: var(--font-main);
-    font-variation-settings: "wdth" 115, "wght" 350, "GRAD" 50;
+    
     background-color: var(--color-darkest);
     overflow-x: hidden;
 }
