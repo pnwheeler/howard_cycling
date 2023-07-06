@@ -91,7 +91,8 @@
         justify-content: space-between;
         height: 3.5em;
         border-bottom: 0.15rem solid var(--color-blue); 
-        background-color: var(--color-darkest);
+        background-color: rgba(24, 24, 24, 0.85);
+        backdrop-filter: blur(5px);
     }
     .mobile-heading{
         padding-left: 1em; 
@@ -103,13 +104,13 @@
     }
     .mobile-overlay.open{
         padding-top: 2em;
-        position:relative;
+        position:absolute;
         display: flex;
         background-color: var(--color-dark);
         flex-direction: column;
         min-height: 100lvh; 
         width: 100%;
-        top: 0;
+        top: 3.5em;
         z-index: 3;
         gap: 1em;
         overflow: hidden;

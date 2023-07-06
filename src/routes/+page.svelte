@@ -29,7 +29,7 @@
 		</p>
 	</section>
 	<section class="nica-info border-blue pane bg-dark">
-		<iframe
+		<!-- <iframe
 			width="480"
 			height="270"
 			id="nica-video"
@@ -37,7 +37,7 @@
 			title="YouTube video player"
 			frameborder="0"
 			allowfullscreen
-		/>
+		/> -->
 		<div class="div-block" id="nica-message">
 			<p>
 				We take all comers. No experience necessary! You don't even need to know how to ride a bike.

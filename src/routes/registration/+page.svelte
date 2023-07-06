@@ -12,7 +12,7 @@
 
 <div class="flex-row">
     <h2>Sign up as a </h2>
-    <select bind:value={selected} class="border-blue">
+    <select bind:value={selected} class="bg-dark border-blue">
         {#each options as option}
             <option value={option}>{option.role}</option>
         {/each}
@@ -40,10 +40,10 @@
         align-self: center;
         width: max-content;
         color: var(--color-light);
-        background-color: var(--color-darkest);
         height: 1.5em;
         margin-left: 0.5em;
         width: fit-content;
+        padding-inline: 0.5em;
     }
     option{
         text-align: center;

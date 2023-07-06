@@ -34,54 +34,54 @@
     </svg>
 </button>
 <style>
-    .btn{
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-        border:none;
-    }
-    .open, .top, .middle, .bottom{
-        transition: all .3s .3s ease;
-    }
-    .top{
-        color: rgb(141, 141, 141);
-        stroke-dasharray: 59 139;
-        
-    }
-    .middle{
-        color: rgb(107, 107, 107);
-        stroke-dasharray: 49 60;
-        stroke-dashoffset: -10;
-    }
-    .bottom{
-        color: rgb(70, 70, 70);
-        stroke-dasharray: 59 139;
-        /* transition: all .2s ease;  */
-    }
-    .open .top{
-        stroke-width: 10px;
-        stroke-dasharray: 57 70;
-        stroke-dashoffset: -70;
-        color: rgb(158, 0, 0);
-    }
-    .open .middle{
-        stroke-dasharray: 1 60;
-        stroke-dashoffset: -30;
-        color: transparent;
-    }
-    .open .bottom{
-        stroke-width: 10px;
-        stroke-dasharray: 57 70;
-        stroke-dashoffset: -70;
-        color: rgb(158, 0, 0);
-    }
-    /* .opened .top{
-
-    }
-    .opened .middle{
-
-    }
-    .opened .bottom{ 
-
-    }*/
+.btn{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border:none;
+}
+.top{
+    color: rgb(141, 141, 141);
+    stroke-dasharray: 59 139;
+    transition: 
+        stroke-dasharray .2s .3s ease,
+        stroke-dashoffset .2s .2s ease,
+        stroke-width .2s .3s ease,
+        color .2s .3s ease;
+}
+.middle{
+    color: rgb(107, 107, 107);
+    stroke-dasharray: 49 60;
+    stroke-dashoffset: -10;
+    transition:
+        stroke-dasharray .2s .3s ease,
+        stroke-dashoffset .1s .1s ease,
+        color .2s .3s ease;
+}
+.bottom{
+    color: rgb(70, 70, 70);
+    stroke-dasharray: 59 139;
+    transition:
+        stroke-dasharray .3s .1s ease,
+        stroke-dashoffset .2s .1s ease,
+        stroke-width .2s .3s ease,
+        color .2s .1s ease;
+}
+.open .top{
+    stroke-width: 11;
+    stroke-dasharray: 57 70;
+    stroke-dashoffset: -70;
+    color: var(--color-blue);
+}
+.open .middle{
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    color: transparent;
+}
+.open .bottom{
+    stroke-width: 11;
+    stroke-dasharray: 57 70;
+    stroke-dashoffset: -70;
+    color: var(--color-blue);
+}
 </style>
