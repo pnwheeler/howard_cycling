@@ -93,6 +93,7 @@
         border-bottom: 0.15rem solid var(--color-blue); 
         background-color: rgba(24, 24, 24, 0.85);
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
     }
     .mobile-heading{
         padding-left: 1em; 
