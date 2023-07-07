@@ -15,25 +15,25 @@
 
 {#if ready}
     <div class="main-layout" bind:clientWidth={w}>
+        {#if !mobile}
+            <div class="header">
+                <h1 class="decorative-shadow" transition:fade={{duration: 1000}}>Howard Cycling Club</h1>
+                <img transition:fly={{duration: 1000, delay: 300, x: 100}} src='/img/HowardLion_Vectorized.png' alt="logo"/>
+            </div>
+        {/if}
         <Navbar mobile={mobile} open={open}/>
-            <main class:mobile>
-                {#if mobile}
-                    {#key data.url}
-                        <slot/>
-                    {/key}
-                {:else}
-                    {#key data.url}
-                        <div 
-                        in:fly|local={{x: -100, duration: 500, delay: 500}}
-                        out:fade>
-                            <slot/>
-                        </div>
-                    {/key}
-                {/if}
-            </main>
+        <main class:mobile>
+            {#key data.url}
+                <div 
+                in:fly|local={{x: -100, duration: 500, delay: 500}}
+                out:fade>
+                    <slot/>
+                </div>
+            {/key}
+        </main>
         
-        <footer class="footer">
-            <h1 class="special-variant">Howard Cycling Club</h1>
+        <footer class:mobile>
+            <h1 class="decorative-shadow">Howard Cycling Club</h1>
             <smaller>Follow us on social media!</smaller>
             <div class="socials">
                 <a href="https://www.facebook.com"> 
@@ -51,6 +51,18 @@
 {/if}
 
 <style>
+    .header {
+        display: flex;
+        background-color: var(--color-darkest);
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: min(1vh, 1em);
+    }
+    .header > img{
+        display: flex;
+        width: min(150px, 20vw);
+    }
     main{
         padding-inline: 1em;
         padding-bottom: 1em;
@@ -65,7 +77,7 @@
         color: var(--color-light);
         background-color: var(--color-darker);
         min-height: 100vh;
-        min-height: 100dvh;
+        min-height: 100vh;
         display: grid;
         justify-items: stretch;
         grid-template-rows:
@@ -73,16 +85,16 @@
             auto
             1fr;
     }
-    .footer{
+    footer{
         background-color: var(--color-darkest);
-        border-top: 0.1em solid var(--color-light);
+        border-inline: 0.1em solid var(--color-blue);
     }
-    .footer > h1 {
-        text-transform: uppercase;
+    footer.mobile{
+        border: none;
+    }
+    footer > h1 {
         font-size: 2em;
         grid-column: span 3;
-        color: var(--color-blue);
-        text-shadow: 0.1rem 0.1rem var(--color-lighter);
     }
     .socials {
         display: flex;
@@ -94,7 +106,7 @@
     .socials a{
         flex-grow: 0;
         flex-shrink: 0;
-        flex-basis: 50px;
+        flex-basis: 40px;
     }
     a {
         position: relative;

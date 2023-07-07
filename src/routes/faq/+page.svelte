@@ -2,7 +2,7 @@
     import FaqPanel from "./FAQPanel/FAQPanel.svelte";
 </script>
 
-<h2>Frequently asked questions</h2>
+<h2 class="pg-name-variant">Frequently asked questions</h2>
 <FaqPanel/>
 
 <style>

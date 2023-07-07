@@ -24,7 +24,7 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<h2>Photos</h2>
+  return `<h2 class="pg-name-variant">Photos</h2>
 <div id="page-container" class="svelte-m3kvv"><img id="hero" src="img/bikers.png" alt="larger pic" class="svelte-m3kvv">
     <div id="grid-gallery" class="svelte-m3kvv">${each(gallerypics, (pic) => {
     return `<img${add_attribute("src", pic.img_src, 0)}${add_attribute("alt", pic.img_src, 0)} class="svelte-m3kvv">`;

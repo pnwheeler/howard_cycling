@@ -85,7 +85,7 @@ const Coach = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".registration-grid.svelte-16h4tus{display:grid;grid-template-columns:repeat(2, 1fr);row-gap:1em;column-gap:2em;margin-top:0.5em;padding-inline:1em}select.svelte-16h4tus{cursor:pointer;display:inline-flex;align-self:center;width:max-content;color:var(--color-light);background-color:var(--color-darkest);height:1.5em;margin-left:0.5em;width:fit-content}option.svelte-16h4tus{text-align:center}@media(max-width: 900px){.registration-grid.svelte-16h4tus{padding-inline:0;row-gap:2em}}",
+  code: ".registration-grid.svelte-1r7p934{display:grid;grid-template-columns:repeat(2, 1fr);row-gap:1em;column-gap:2em;margin-top:0.5em;padding-inline:1em}select.svelte-1r7p934{cursor:pointer;display:inline-flex;align-self:center;width:max-content;color:var(--color-light);height:1.5em;margin-left:0.5em;width:fit-content;padding-inline:0.5em}option.svelte-1r7p934{text-align:center}@media(max-width: 900px){.registration-grid.svelte-1r7p934{padding-inline:0;row-gap:2em}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -95,12 +95,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.options(options);
   $$result.css.add(css);
   selected = options[0];
-  return `<div class="flex-row"><h2>Sign up as a </h2>
-    <select class="border-blue svelte-16h4tus">${each(options, (option) => {
-    return `<option${add_attribute("value", option, 0)} class="svelte-16h4tus">${escape(option.role)}</option>`;
+  return `<div class="flex-row"><h2 class="pg-name-variant">Sign up as a </h2>
+    <select class="bg-dark border-blue svelte-1r7p934">${each(options, (option) => {
+    return `<option${add_attribute("value", option, 0)} class="svelte-1r7p934">${escape(option.role)}</option>`;
   })}</select></div>
 
-<div class="registration-grid svelte-16h4tus">${validate_component(selected.component || missing_component, "svelte:component").$$render($$result, {}, {}, {})}</div>`;
+<div class="registration-grid svelte-1r7p934">${validate_component(selected.component || missing_component, "svelte:component").$$render($$result, {}, {}, {})}</div>`;
 });
 export {
   Page as default

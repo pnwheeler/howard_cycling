@@ -169,7 +169,6 @@
     .title{
         font-size: 1.4rem;
         color: var(--color-blue);
-        
         text-transform: uppercase;
     }
     @media (max-width: 900px){

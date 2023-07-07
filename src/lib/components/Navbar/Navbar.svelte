@@ -18,7 +18,7 @@
     export let open = false;
     export let mobile = false;
     export let onClick = () => (open = !open);
-    $: index = links.findIndex(link => link.href == routeId);
+    $:index = links.findIndex(link => link.href == routeId);
     $:routeId = $page.route.id;
     // Reduce emphasis on navbar when we have pages with nested page layouts
     $:disabled = (routeId === '/teaminfo' && !mobile);
@@ -37,21 +37,17 @@
             <HamburgerButton {open} {onClick} width={50}/>
         </div>
         {#if open}
-            <nav class="mobile-overlay" class:open 
+            <nav class="overlay nav-variant" class:open 
             in:fly|local={{duration: 900, x: 500, delay: 200, easing:quartOut}}
             out:fly|local={{duration: 1000, x: 500, delay: 300, easing:quartInOut}}>
-                {#each links as {href, name, id}}
+                {#each links as {href, name}}
                     <a class:active={routeId == href} {href} on:click={onClick}>{name}</a>
                 {/each}
             </nav>
         {/if}
     </div>
 {:else}
-    <div class="header">
-        <h1 class="special-variant" transition:fade={{duration: 1000}}>Howard Cycling Club</h1>
-        <img transition:fly={{duration: 1000, delay: 300, x: 100}} src='/img/HowardLion_Vectorized.png' alt="logo"/>
-    </div>
-    <nav class="nav-bar" class:greyscale={disabled} aria-controls="primary-navigation">
+    <nav class="nav-bar nav-variant" class:greyscale={disabled} aria-controls="primary-navigation">
         {#each links as {href, name}}
             <a class:active={routeId == href} {href}>{name}</a>
         {/each}
@@ -59,27 +55,10 @@
 {/if}
 
 <style>
-    .header {
-        display: flex;
-        background-color: var(--color-darkest);
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
-        padding: min(1vh, 1em);
-        text-shadow: 0.15rem 0.15rem var(--color-lighter);
-    }
-    .header > img{
-        display: flex;
-        width: min(150px, 20vw);
-    }
-    .header > h1 { 
-        color:var(--color-blue);
-        text-transform: uppercase;
-    }
 /* ----------------------mobile version-------------------*/  
     .mobile-container{
         position: fixed;
-        top: -0.2em;
+        top: 0;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -99,42 +78,38 @@
         padding-left: 1em; 
         color: var(--color-disabled);
     }
-    .mobile-overlay{
+    .overlay{
         display: none;
         
     }
-    .mobile-overlay.open{
+    .overlay.open{
         padding-top: 2em;
-        position:absolute;
+        position:relative;
         display: flex;
         background-color: var(--color-dark);
         flex-direction: column;
-        min-height: 100lvh; 
+        min-height: 100vh; 
         width: 100%;
-        top: 3.5em;
+        top: 0;
         z-index: 3;
         gap: 1em;
         overflow: hidden;
     }
-    .mobile-overlay a{
-        font-variation-settings: "GRAD" 0, "XTRA" 380, "wght" 500, "wdth" 60;
+    .overlay a{
         margin-right: 0.5em;
         padding-right: 0.5em;
         justify-content: end;
         text-decoration: none;
         font-size: 2em;
-        text-transform: uppercase;
-        transition: all .2s;
-        
+        box-shadow: none;
+        transition: all .2s;  
     }
-    .mobile-overlay a.active{
-        font-variation-settings: "GRAD" 100, "XTRA" 380, "wght" 500, "wdth" 60;
-        /* "wdth" 115, "wght" 350, "GRAD" 50; */
+    .overlay a.active{
         color: white;
         box-shadow: 0.1em 0 0 var(--color-blue); 
+       
     }
 /* --------------------non-mobile version-------------------*/
-
     .nav-bar{
         display: grid;
         grid-auto-flow: column;
@@ -144,7 +119,6 @@
         position: sticky;
         top: -0.1rem;
         z-index: 5;
-        text-transform: uppercase;
         font-size: var(--size-step-2);
         background-color: var(--color-dark);
         box-shadow: 0 0.1rem 0 var(--color-disabled); 
@@ -152,16 +126,13 @@
     .nav-bar a {
         cursor: pointer;
         z-index: 2;
-        font-variation-settings: "GRAD" 0, "XTRA" 0, "wght" 500, "wdth" 100;
         justify-content: center;
         justify-self: stretch;
         text-decoration: none;
-        color: var(--color-light);
         white-space: nowrap;
         transition: all .5s ease;
     }
     .nav-bar a:hover {
-        --grad: 100;
         color: var(--color-lighter);
     }
     .nav-bar a::after{
@@ -184,7 +155,6 @@
         opacity: 1;
     }
     .nav-bar a.active{
-        font-variation-settings: "GRAD" 100, "XTRA" 0, "wght" 500, "wdth" 100;
         color: white;
     }
     .nav-bar a.active::after{

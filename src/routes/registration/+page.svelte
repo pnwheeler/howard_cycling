@@ -11,7 +11,7 @@
 </script>
 
 <div class="flex-row">
-    <h2>Sign up as a </h2>
+    <h2 class="pg-name-variant">Sign up as a </h2>
     <select bind:value={selected} class="bg-dark border-blue">
         {#each options as option}
             <option value={option}>{option.role}</option>

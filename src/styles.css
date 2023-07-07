@@ -1,17 +1,20 @@
 @font-face {
     font-family: 'Roboto Flex';
     src: url('/fonts/RobotoFlex.woff2') format('woff2');
-    font-variation-settings: "wdth" 115, "wght" 350, "GRAD" 50;
+    font-variation-settings: normal;
 }
 :root {
-    /* Font types */
-    --font-main: 'Roboto Flex', sans-serif;
-
+    /* Font variation settings */
+    --font-main: "wdth" 115, "wght" 350, "GRAD" 50;
+    --font-narrow-bold: "GRAD" 0, "XTRA" 0, "wght" 490, "wdth" 100;
+    --font-heading: "wght" 600, "YTUC" 760, "YTLC" 570, "wdth" 115, "GRAD" 50, "XTRA" 500;
+    --font-decorative: "slnt" -10, "GRAD" 400, "XTRA" 490, "wght" 800, "wdth" 100;
+    
     /* Font sizing */
     --size-step-0: 1em;
     --size-step-1: 1.25em;
     --size-step-2: 1.7em;
-    --size-step-3: 2.5em;
+    --size-step-3: 2.2em;
     --size-step-4: 4.5em;
 
     /* Scrollbar */
@@ -76,10 +79,11 @@ body {
     width: 100%;
     height: 100%;
     /* min-width: 1165px; */
-    font-family: var(--font-main);
-    
+    font-family: 'Roboto Flex', sans-serif;
+    font-variation-settings: var(--font-main);
     background-color: var(--color-darkest);
     overflow-x: hidden;
+    font-synthesis: none;
 }
 @media (min-width: 1350px){
     body{
@@ -87,7 +91,9 @@ body {
         margin: 0 auto;
     }
 }
-
+em{
+    font-variation-settings: "slnt" -10;
+}
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -103,12 +109,8 @@ p, h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: var(--size-step-4);
 }
-h2 {
-    font-size:2.2em;
-    text-transform: uppercase;
-    font-variation-settings: "slnt" -10, "GRAD" 400, "XTRA" 490, "wght" 800, "wdth" 100;
-    color: var(--color-lighter);
-    text-shadow: 0.1em 0.1em var(--color-blue);
+h2{
+    font-size: var(--size-step-3);
 }
 h3 {
     font-size: var(--size-step-2);
@@ -117,7 +119,7 @@ h4{
     font-size: var(--size-step-1);
 }
 h3, h4 {
-    font-variation-settings: "wght" 500, "YTUC" 760, "YTLC" 570, "wdth" 115, "GRAD" 50, "XTRA" 500;
+    font-variation-settings: var(--font-heading);
 }
 ul, ol {
     padding-inline-start: 0;
@@ -155,9 +157,27 @@ a[target=_blank]::after{
     height: 1em;
     color: red;
 }
-.special-variant {
-    font-variation-settings: "slnt" -10, "GRAD" 400, "XTRA" 490, "wght" 800, "wdth" 100;
+/* -----------------------Font variation classes------------------------- */
+.decorative-shadow {
+    font-variation-settings: var(--font-decorative);
+    color:var(--color-blue);
+    text-transform: uppercase;
+    text-shadow: 0.05em 0.05em var(--color-lighter);
 }
+.nav-variant {
+    
+    text-transform: uppercase;
+    font-variation-settings: var(--font-narrow-bold);
+}
+.pg-name-variant {
+    text-transform: uppercase;
+    font-variation-settings: var(--font-decorative);
+    color: var(--color-lighter);
+    text-shadow: 0.05em 0.05em var(--color-blue);
+    margin-block: 0.25em;
+}
+
+/* ----------------------------Utility Classes--------------------------- */
 .div-block{
     display: flex;
     flex-direction: column;

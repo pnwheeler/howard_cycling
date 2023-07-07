@@ -64,7 +64,7 @@ const css$3 = {
 };
 const Places = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$3);
-  return `<h2>Beginner and Intermediate MTB Rides</h2>
+  return `<h2 class="pg-name-variant">Beginner and Intermediate MTB Rides</h2>
 <div class="locations-container svelte-1ibr0d0">${each(locations, (location) => {
     return `<section class="svelte-1ibr0d0">${validate_component(Location, "Location").$$render($$result, Object.assign({}, location), {}, {})}
         </section>`;
@@ -78,7 +78,7 @@ const css$2 = {
 };
 const Merch = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<h2>Merchandise</h2>
+  return `<h2 class="pg-name-variant">Merchandise</h2>
 <div class="merch svelte-s59cdg"><p class="svelte-s59cdg">The Howard Cycling club may have team merchandise for sale. Please reach out to merchandise coordinator [TBD].
         Merchandise will typically be sold on-site at practices and races. <span class="emphasize">No cash</span>, only credit
         accepted at this time. 
@@ -95,7 +95,7 @@ const css$1 = {
 };
 const Activities = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<h2>Club Activities</h2>
+  return `<h2 class="pg-name-variant">Club Activities</h2>
 <div class="activities-container svelte-alsp0u"><section class="div-block"><h3>No-Contact Rider Registration</h3>
         <p>Returning riders can register via the TeamApp link provided by email and can complete all
             necessary documents via the online process. New riders for the 2023 season that would like to
@@ -125,7 +125,7 @@ const Activities = create_ssr_component(($$result, $$props, $$bindings, slots) =
 });
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: '.sub-nav.svelte-1scprfv.svelte-1scprfv{display:grid;grid-template-columns:repeat(3, 200px);justify-content:center;padding-block:0.5em;place-items:center;font-size:1.3em}button.svelte-1scprfv.svelte-1scprfv{display:flex;justify-content:center;cursor:pointer;border:none;border-radius:1em;width:150px;text-transform:uppercase;--grad:10;color:var(--color-light);background-color:var(--color-dark);font-variation-settings:"GRAD" 0, "XTRA" 380, "wght" 500, "wdth" 60;transition:all .3s ease}button.svelte-1scprfv.svelte-1scprfv:hover{color:var(--color-lighter);box-shadow:0 0 0 .1em var(--color-disabled)}button.active.svelte-1scprfv.svelte-1scprfv{font-variation-settings:"GRAD" 100, "XTRA" 380, "wght" 500, "wdth" 60;background-color:var(--color-blue);box-shadow:0 0 0 .1rem var(--color-blue);color:white}@media(max-width: 670px){.sub-nav.svelte-1scprfv.svelte-1scprfv{gap:unset;grid-template-columns:repeat(3, auto);justify-content:space-evenly}.sub-nav.svelte-1scprfv button.svelte-1scprfv{width:fit-content;padding-inline:0.5em}}',
+  code: ".sub-nav.svelte-1btwysq.svelte-1btwysq{display:grid;grid-template-columns:repeat(3, 200px);justify-content:center;padding-top:1em;place-items:center;font-size:1.3em}button.svelte-1btwysq.svelte-1btwysq{display:flex;justify-content:center;cursor:pointer;border:none;border-radius:1em;width:150px;color:var(--color-light);background-color:var(--color-dark);transition:all .3s ease}button.svelte-1btwysq.svelte-1btwysq:hover{color:var(--color-lighter);box-shadow:0 0 0 .1em var(--color-disabled)}button.active.svelte-1btwysq.svelte-1btwysq{background-color:var(--color-blue);box-shadow:0 0 0 .1rem var(--color-blue);color:white}@media(max-width: 670px){.sub-nav.svelte-1btwysq.svelte-1btwysq{gap:unset;grid-template-columns:repeat(3, auto);justify-content:space-evenly}.sub-nav.svelte-1btwysq button.svelte-1btwysq{width:fit-content;padding-inline:0.5em}}",
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -145,8 +145,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.subpages(subpages);
   $$result.css.add(css);
   active = subpages[1];
-  return `<nav class="sub-nav svelte-1scprfv" aria-controls="secondary-navigation">${each(subpages, (subpage, i) => {
-    return `<button class="${["nav-tab svelte-1scprfv", active.name === subpage.name ? "active" : ""].join(" ").trim()}">${escape(subpage.name)}
+  return `<nav class="sub-nav svelte-1btwysq" aria-controls="secondary-navigation">${each(subpages, (subpage, i) => {
+    return `<button class="${["nav-variant svelte-1btwysq", active.name === subpage.name ? "active" : ""].join(" ").trim()}">${escape(subpage.name)}
         </button>`;
   })}</nav>
 

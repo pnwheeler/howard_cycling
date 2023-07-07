@@ -39,6 +39,7 @@
     padding: 0;
     background-color: transparent;
     border:none;
+    cursor: pointer;
 }
 .top{
     color: rgb(141, 141, 141);

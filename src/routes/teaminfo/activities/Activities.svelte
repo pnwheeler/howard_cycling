@@ -1,7 +1,7 @@
 <script>
     
 </script>
-<h2>Club Activities</h2>
+<h2 class="pg-name-variant">Club Activities</h2>
 <div class="activities-container">
     <section class="div-block">
         <h3>No-Contact Rider Registration</h3>

@@ -3,7 +3,7 @@
     import { profiles } from "./coaches";
 </script>
 
-<h2>Meet the coaches</h2>
+<h2 class="pg-name-variant">Meet the coaches</h2>
 <div class="coaches-container">
     {#each profiles as profile}
         <div><CoachCard {...profile}/></div>

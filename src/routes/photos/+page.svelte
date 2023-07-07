@@ -2,7 +2,7 @@
     import { gallerypics } from "./photoData";
 </script>
 
-<h2>Photos</h2>
+<h2 class="pg-name-variant">Photos</h2>
 <div id="page-container">
     <img id="hero" src="img/bikers.png" alt="larger pic"/>
     <div id="grid-gallery">

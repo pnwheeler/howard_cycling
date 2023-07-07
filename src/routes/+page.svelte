@@ -1,4 +1,4 @@
-<h2>Home</h2>
+<h2 class="pg-name-variant">Home</h2>
 <div class="home-container">
 	<img class="large-img div-block" src="./img/mountain_bikers.jpg" alt="Mountain bikers" />
 	<section class="news text-left">
@@ -12,7 +12,7 @@
 	</section>
 	<section class="div-block" style="width: 100%">
 		<hr>
-		<h2 class="special-variant heading-break">Howard Cycling Club Mission</h2>
+		<h2 class="heading-break">Howard Cycling Club Mission</h2>
 		<hr>
 	</section>
 	<section class="div-block text-center" id="mission">
@@ -70,7 +70,7 @@
 	</section>
 	<section class="div-block" style="width: 100%">
 		<hr>
-		<h2 class="special-variant heading-break">Our Super Awesome Sponsors</h2>
+		<h2 class="heading-break">Our Super Awesome Sponsors</h2>
 		<hr>
 	</section>
 	<section id="sponsors" class="div-block" >
@@ -108,11 +108,11 @@
 
 	}
 	.heading-break{
+		font-variation-settings: var(--font-decorative);
 		text-transform: uppercase;
 		color: var(--color-lighter);
 		font-size: min(var(--size-step-3), 5.5vw);
-		text-shadow: none;
-		text-align: center;
+		text-align: center;	
 	}
 	.nica-info{
 		display: grid;

@@ -112,7 +112,7 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<h2>Meet the coaches</h2>
+  return `<h2 class="pg-name-variant">Meet the coaches</h2>
 <div class="coaches-container svelte-130znyf">${each(profiles, (profile) => {
     return `<div>${validate_component(CoachCard, "CoachCard").$$render($$result, Object.assign({}, profile), {}, {})}</div>`;
   })}

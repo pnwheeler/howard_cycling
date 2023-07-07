@@ -6,7 +6,7 @@ const css = {
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<h2>Events</h2>
+  return `<h2 class="pg-name-variant">Events</h2>
 <div class="events-grid svelte-1cem7q9"><section class="div-block tl svelte-1cem7q9"><h3 class="center svelte-1cem7q9">2023 Howard Cycling Club Calendar</h3>
         <div class="pane bg-dark border-blue"><ul><li><span class="emphasize">March 1:</span> Online registration opens for MICL Coaches.</li>
                 <li><span class="emphasize">April 1:</span> Online registration opens for MICL Student-athletes.

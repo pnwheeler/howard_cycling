@@ -1,4 +1,4 @@
-<h2>Events</h2>
+<h2 class="pg-name-variant">Events</h2>
 <div class="events-grid">
     <section class="div-block tl">
         <h3 class="center">2023 Howard Cycling Club Calendar</h3>

@@ -1,4 +1,4 @@
-<h2>Merchandise</h2>
+<h2 class="pg-name-variant">Merchandise</h2>
 <div class="merch">
     <p>The Howard Cycling club may have team merchandise for sale. Please reach out to merchandise coordinator [TBD].
         Merchandise will typically be sold on-site at practices and races. <span class="emphasize">No cash</span>, only credit
