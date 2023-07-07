@@ -37,7 +37,7 @@
             <HamburgerButton {open} {onClick} width={50}/>
         </div>
         {#if open}
-            <nav class="overlay nav-variant" class:open 
+            <nav class="overlay" class:open 
             in:fly|local={{duration: 900, x: 500, delay: 200, easing:quartOut}}
             out:fly|local={{duration: 1000, x: 500, delay: 300, easing:quartInOut}}>
                 {#each links as {href, name}}
@@ -47,7 +47,7 @@
         {/if}
     </div>
 {:else}
-    <nav class="nav-bar nav-variant" class:greyscale={disabled} aria-controls="primary-navigation">
+    <nav class="nav-bar" class:greyscale={disabled} aria-controls="primary-navigation">
         {#each links as {href, name}}
             <a class:active={routeId == href} {href}>{name}</a>
         {/each}
@@ -55,10 +55,14 @@
 {/if}
 
 <style>
+    nav > a {
+        text-transform: uppercase;
+        font-variation-settings: var(--font-narrow-bold);
+    }
 /* ----------------------mobile version-------------------*/  
     .mobile-container{
         position: fixed;
-        top: 0;
+        top: -0.2em;
         width: 100vw;
         display: flex;
         flex-direction: column;

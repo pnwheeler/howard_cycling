@@ -164,11 +164,6 @@ a[target=_blank]::after{
     text-transform: uppercase;
     text-shadow: 0.05em 0.05em var(--color-lighter);
 }
-.nav-variant {
-    
-    text-transform: uppercase;
-    font-variation-settings: var(--font-narrow-bold);
-}
 .pg-name-variant {
     text-transform: uppercase;
     font-variation-settings: var(--font-decorative);

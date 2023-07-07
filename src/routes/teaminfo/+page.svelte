@@ -15,7 +15,6 @@
 <nav class="sub-nav" aria-controls="secondary-navigation">
     {#each subpages as subpage, i}
         <button 
-        class="nav-variant"
         class:active={active.name === subpage.name}
         on:click={() => active = subpages[i]}>
             {subpage.name}
@@ -49,6 +48,8 @@
         border-radius: 1em;
         width: 150px;
         color: var(--color-light);
+        text-transform: uppercase;
+        font-variation-settings: var(--font-narrow-bold);
         background-color: var(--color-dark);
         transition: all .3s ease;
     }

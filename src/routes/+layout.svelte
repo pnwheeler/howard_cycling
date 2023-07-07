@@ -32,7 +32,7 @@
             {/key}
         </main>
         
-        <footer class:mobile>
+        <footer>
             <h1 class="decorative-shadow">Howard Cycling Club</h1>
             <smaller>Follow us on social media!</smaller>
             <div class="socials">
@@ -86,11 +86,7 @@
             1fr;
     }
     footer{
-        background-color: var(--color-darkest);
-        border-inline: 0.1em solid var(--color-blue);
-    }
-    footer.mobile{
-        border: none;
+        background-color: var(--color-dark);
     }
     footer > h1 {
         font-size: 2em;
@@ -120,6 +116,6 @@
         transform: scale(1.3);
     }
     smaller {
-        color: var(--color-disabled);
+        color: var(--color-light);
     }
 </style>
