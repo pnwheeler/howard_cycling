@@ -1,7 +1,7 @@
 <script>
     import { page } from "$app/stores";
     import HamburgerButton from "./HamburgerButton.svelte";
-    import { fade, fly} from 'svelte/transition';
+    import {fly} from 'svelte/transition';
     import { quartInOut, quartOut } from "svelte/easing";
 
     
@@ -55,10 +55,7 @@
 {/if}
 
 <style>
-    nav > a {
-        text-transform: uppercase;
-        font-variation-settings: var(--font-narrow-bold);
-    }
+
 /* ----------------------mobile version-------------------*/  
     .mobile-container{
         position: fixed;
@@ -92,7 +89,7 @@
         display: flex;
         background-color: var(--color-dark);
         flex-direction: column;
-        min-height: 100vh; 
+        min-height: 100dvh; 
         width: 100%;
         top: 0;
         z-index: 3;
@@ -106,6 +103,8 @@
         text-decoration: none;
         font-size: 2em;
         box-shadow: none;
+        font-variation-settings: "GRAD" 50, "XTRA" 380, "wght" 500, "wdth" 60;
+        text-transform: uppercase;
         transition: all .2s;  
     }
     .overlay a.active{
@@ -130,6 +129,8 @@
     .nav-bar a {
         cursor: pointer;
         z-index: 2;
+        font-variation-settings: "GRAD" 50, "XTRA" 380, "wght" 500, "wdth" 60;
+        text-transform: uppercase;
         justify-content: center;
         justify-self: stretch;
         text-decoration: none;

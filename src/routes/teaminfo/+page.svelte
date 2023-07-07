@@ -49,7 +49,7 @@
         width: 150px;
         color: var(--color-light);
         text-transform: uppercase;
-        font-variation-settings: var(--font-narrow-bold);
+        font-variation-settings: "GRAD" 50, "XTRA" 380, "wght" 500, "wdth" 60;
         background-color: var(--color-dark);
         transition: all .3s ease;
     }
@@ -58,7 +58,6 @@
         box-shadow: 0 0 0 .1em var(--color-disabled); 
     }
     button.active {
-        /* font-variation-settings: "GRAD" 100, "XTRA" 380, "wght" 500, "wdth" 60; */
         background-color: var(--color-blue);
         box-shadow: 0 0 0 .1rem var(--color-blue);
         color: white;
