@@ -38,7 +38,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <p>For more information on registration go to the MICL GRiT Website:
         <a href="https://marylandmtb.org/girls-riding-together-grit" target="_blank">www.marylandmtb.org/girls-riding-together</a></p></section>
     <section class="div-block half pane border-light b svelte-1cem7q9" id="note"><h4 class="emphasize">Note:</h4>
-        <ul><li>We use the Stack Team App to keep registered riders and families up to date and share a more detailed schedule for MLCC team members.</li>
+        <ul><li>We use the Stack Team App to keep registered riders and families up to date and share a more detailed schedule for Howard Cycling Club team members.</li>
             <li>To Ensure that we properly staff our events, and to support any future contact tracing requirements, all riders and coaches MUST RSVP their attendance for EVERY event in Team App.</li></ul></section>
 </div>`;
 });

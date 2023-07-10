@@ -21,7 +21,6 @@
             <ul class="indent">
                 <li>A positive can do attitude</li>
                 <li>A very large amount of "ready to have a little fun" </li>
-                <li>Mask/face covering</li>
                 <li>Full finger cycling gloves</li>
                 <li>Spare tube for their wheel size</li>
                 <li>Tube repair patch kit</li>

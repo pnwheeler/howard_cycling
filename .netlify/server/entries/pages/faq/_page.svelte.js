@@ -78,8 +78,8 @@ const Answer7 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <li>Helmet</li></ol></div>
 <p>MICL registration fees are collected through NICA Pit Zone at the time of Registration: </p>
     <ul><li>2021 MICL Season Registration Fee (Includes the 5 League Fall events): $275 ​</li></ul>
-<p>MLCC Team Dues will be invoiced on July 1 through Team Snap:</p>
-    <ul><li>Student athletes (includes MLCC jersey): $75. </li></ul>`;
+<p>Howard Cycling Club Team Dues will be invoiced on July 1 through Team Snap:</p>
+    <ul><li>Student athletes (includes Howard Cycling Club jersey): $75. </li></ul>`;
 });
 const Answer8 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<p>Great!  We need coaches for our team so please contact us using the information on 
@@ -94,11 +94,11 @@ const Answer8 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     <li>Additional training cost may depend on your NICA Coach License level. Get more info on 
         Licensing on the <a href="https://marylandmtb.org/coaches-wanted" target="_blank">MICL Webpage</a>. 
     </li></ul>
-<p>​MLCC Team Dues will be invoice on July 1 through TeamSnap:</p>
-<ul><li>Coaches (includes MLCC Jersey): $50</li></ul>`;
+<p>​Howard Cycling Club Team Dues will be invoice on July 1 through TeamSnap:</p>
+<ul><li>Coaches (includes Howard Cycling Club Jersey): $50</li></ul>`;
 });
 const Answer9 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<p>Just hit us up with your questions at <a href="href=mailto:bmwheeler1@verizon.net">bmwheeler1@verizon.net</a>
+  return `<p>Just hit us up with your questions at <a href="href=mailto:howardcyclingclub@gmail.com">howardcyclingclub@gmail.com</a>
     and we&#39;ll do our best to get right back to you.  
 </p>`;
 });
@@ -107,8 +107,8 @@ const Answer10 = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     a waiver and join us for one practice before needing to register.  Please fill out the
     <a href="https://nationalmtb.org/agreement-to-participate-and-release-of-liability-form/" target="_blank">NICA waiver</a>, 
     and bring it with you when you join us for one practice.  If you use the NICA electronic waiver form, 
-    please email it to <a href="href=mailto:bmwheeler1@verizon.net">bmwheeler1@verizon.net</a>.  
-    MLCC will staff a rider registration table during events to speak with riders and parents 
+    please email it to <a href="href=mailto:howardcyclingclub@gmail.com">howardcyclingclub@gmail.com</a>.  
+    Howard Cycling Club will staff a rider registration table during events to speak with riders and parents 
     and to receive appropriate documentation.  Upon request, new 2021 riders will also receive the Pit Zone registration link.
 </p>`;
 });
@@ -127,8 +127,8 @@ const Answer12 = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 </p>`;
 });
 const Answer13 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<p>The MLCC developed operating procedures for team supported events including practices, races, rides, and 
-    other gatherings.  The MLCC will apply NICA, MICL, federal, state, county, and local regulations, and best 
+  return `<p>The Howard Cycling Club developed operating procedures for team supported events including practices, races, rides, and 
+    other gatherings.  The Howard Cycling Club will apply NICA, MICL, federal, state, county, and local regulations, and best 
     practices to ensure the safety of riders, coaches, and parents at all times.   Additional details are on 
     under the <a href="/teaminfo">Team Info</a> section.
 </p>`;
@@ -155,7 +155,7 @@ const items = [
   { question: "Can I just try it out first?", component: Answer10 },
   { question: "What is the minimum age allowed to participate?", component: Answer11 },
   { question: "What is the maximum age allowed to participate?", component: Answer12 },
-  { question: "How does MLCC conduct their activities?", component: Answer13 },
+  { question: "How does Howard Cycling Club conduct their activities?", component: Answer13 },
   { question: "What is the commitment required for practices?", component: Answer14 },
   { question: "I have a few more questions.  How can I reach out?", component: Answer9 }
 ];

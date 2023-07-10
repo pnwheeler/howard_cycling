@@ -9,13 +9,11 @@
                     <span class="emphasize">April 1:</span> Online registration opens for MICL Student-athletes.
                     See the <a href="/registration">registration tab</a> Pre-season begins.
                 </li>
-                <li>
-                    <span class="emphasize">July 1: Season Begins</span> &ndash; Team Dues must be paid in full
-                </li>
                 <li class="emphasize">
-                    July 15 is the cut off for one day trials and joining for the team.
+                    August 15 is the cut off for one day trials and joining for the team.
                 </li>
             </ul>
+            <p class="center"><small>Season 2 TBD</small></p>
         </div>
     </section>
     <section class="div-block cl">
@@ -24,9 +22,9 @@
             <div class="schedule-grid">
                 <section>
                     <h3 class="text-center">Weekday</h3>
-                    <p><span class="emphasize">When:</span> 6:30 &ndash; 8:00PM</p>
+                    <p><span class="emphasize">When: </span>Tu & Th @6:00 &ndash; 8:00PM</p>
                     <p>
-                        <span class="emphasize">Where:</span> Typically held at the Living Farm Museum in Howard
+                        <span class="emphasize">Where:</span> Typically held at Rockburn Park in Howard
                         County
                     </p>
                 </section>
@@ -61,7 +59,7 @@
     <section class="div-block half pane border-light b" id="note">
         <h4 class="emphasize">Note:</h4>
         <ul>
-            <li>We use the Stack Team App to keep registered riders and families up to date and share a more detailed schedule for MLCC team members.</li>
+            <li>We use the Stack Team App to keep registered riders and families up to date and share a more detailed schedule for Howard Cycling Club team members.</li>
             <li>To Ensure that we properly staff our events, and to support any future contact tracing requirements, all riders and coaches MUST RSVP their attendance for EVERY event in Team App.</li>
         </ul>
     </section>

@@ -19,5 +19,5 @@
 </div>
 <p>MICL registration fees are collected through NICA Pit Zone at the time of Registration: </p>
     <ul><li>2021 MICL Season Registration Fee (Includes the 5 League Fall events): $275 ​</li></ul>
-<p>MLCC Team Dues will be invoiced on July 1 through Team Snap:</p>
-    <ul><li>Student athletes (includes MLCC jersey): $75. </li></ul>
+<p>Howard Cycling Club Team Dues will be invoiced on July 1 through Team Snap:</p>
+    <ul><li>Student athletes (includes Howard Cycling Club jersey): $75. </li></ul>

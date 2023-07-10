@@ -1,6 +1,6 @@
 <div class="border-blue pane bg-dark">
     <ol>
-        <li>Send an email to bmwheeler1@verizon.net with the following information:</li>
+        <li>Send an email to howardcyclingclub@gmail.com with the following information:</li>
         <ul>
             <li>Rider's Name</li>
             <li>Age</li>

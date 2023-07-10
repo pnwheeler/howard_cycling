@@ -1,11 +1,11 @@
 import { c as create_ssr_component, v as validate_component, f as each, m as missing_component, d as add_attribute, e as escape } from "../../../chunks/index.js";
 const Info = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div class="div-block pane border-light"><h3>Have a question?</h3>
-    <p>Email us at <a href="mailto:bmwheeler1@verizon.net">bmwheeler1@verizon.net</a>
+    <p>Email us at <a href="mailto:howardcyclingclub@gmail.com">howardcyclingclub@gmail.com</a>
     for additional information.</p></div>`;
 });
 const StudentInstructions = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<div class="border-blue pane bg-dark"><ol><li>Send an email to bmwheeler1@verizon.net with the following information:</li>
+  return `<div class="border-blue pane bg-dark"><ol><li>Send an email to howardcyclingclub@gmail.com with the following information:</li>
         <ul><li>Rider&#39;s Name</li>
             <li>Age</li>
             <li>Grade level (next school year)</li>
@@ -40,12 +40,12 @@ const Student = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     </p>
     <div class="div-block"><p>MICL registration fees are collected through NICA Pit Zone at the time of registration:</p>
         <ul class="indent"><li>​2023 MICL Season Registration Fee (includes 5 League fall events): <span>$275</span>​</li></ul>
-        <p>​MLCC Team Dues will be invoiced on <span class="emphasize">July 1</span> through TeamSnap:</p>
-        <ul class="indent"><li>Student Athletes (includes MLCC Jersey): <span>$75</span>​</li></ul></div></section>
+        <p>​Howard Cycling Club Team Dues will be invoiced on <span class="emphasize">July 1</span> through TeamSnap:</p>
+        <ul class="indent"><li>Student Athletes (includes Howard Cycling Club Jersey): <span>$75</span>​</li></ul></div></section>
 <section class="div-block span-70 text-left svelte-i9hu5c"><p>Not quite sure? We get that. Bring your bike to practice and give it a try!  
         Please fill out the <a href="https://nationalmtb.org/agreement-to-participate-and-release-of-liability-form/" target="_blank">NICA Waiver</a>, and bring it with you when you join us for one practice before needing to register.  
         If you use the NICA electronic waiver form,  please email the signed copy to 
-        <a href="mailto:bmwheeler1@verizon.net">bmwheeler1@verizon.net</a>.
+        <a href="mailto:howardcyclingclub@gmail.com">howardcyclingclub@gmail.com</a>.
     </p>
     <p class="text-center">Get ready to ride. It&#39;s gonna be sweet. Promise.</p></section>
 <section class="span-fit svelte-i9hu5c">${validate_component(Info, "Info").$$render($$result, {}, {}, {})}
@@ -78,8 +78,8 @@ const Coach = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     <ul class="indent"><li>​Annual coach&#39;s league registration fee:  <span>$50</span></li>
         <li>Background check (onetime fee): <span>$38</span></li>
         <li>Additional training cost may depend on your NICA Coach License level.  Get more info on Licensing on the MICL Webpage. ​</li></ul>
-    <p>​MLCC Team Dues will be invoice on July 1 through Team App:</p>
-    <ul class="indent"><li>Coaches (includes MLCC Jersey): <span>$50</span>​ </li></ul></section>
+    <p>​Howard Cycling Club Team Dues will be invoice on July 1 through Team App:</p>
+    <ul class="indent"><li>Coaches (includes Howard Cycling Club Jersey): <span>$50</span>​ </li></ul></section>
 <div class="div-block span-fit svelte-efr5po">${validate_component(Info, "Info").$$render($$result, {}, {}, {})}
 </div>`;
 });

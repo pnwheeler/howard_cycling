@@ -24,9 +24,9 @@
         <li>Background check (onetime fee): <span>$38</span></li>
         <li>Additional training cost may depend on your NICA Coach License level.  Get more info on Licensing on the MICL Webpage. ​</li>
     </ul>
-    <p>​MLCC Team Dues will be invoice on July 1 through Team App:</p>
+    <p>​Howard Cycling Club Team Dues will be invoice on July 1 through Team App:</p>
     <ul class="indent">
-        <li>Coaches (includes MLCC Jersey): <span>$50</span>​ </li>
+        <li>Coaches (includes Howard Cycling Club Jersey): <span>$50</span>​ </li>
     </ul>
 </section>
 <div class="div-block span-fit">

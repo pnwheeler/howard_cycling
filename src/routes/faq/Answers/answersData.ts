@@ -25,7 +25,7 @@ export const items = [
     { question: "Can I just try it out first?", component: Answer10 },
     { question: "What is the minimum age allowed to participate?", component: Answer11 },
     { question: "What is the maximum age allowed to participate?", component: Answer12 },
-    { question: "How does MLCC conduct their activities?", component: Answer13 },
+    { question: "How does Howard Cycling Club conduct their activities?", component: Answer13 },
     { question: "What is the commitment required for practices?", component: Answer14 },
     { question: "I have a few more questions.  How can I reach out?", component: Answer9 }
 ];

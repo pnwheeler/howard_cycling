@@ -19,5 +19,5 @@ COACHESWANTED: <a href="https://marylandmtb.org/coaches-wanted" target="_blank">
 
 WAIVER: <a href="https://nationalmtb.org/agreement-to-participate-and-release-of-liability-form/" target="_blank">NICA waiver</a>
 
-EMAIL: <a href="href=mailto:bmwheeler1@verizon.net">bmwheeler1@verizon.net</a>
+EMAIL: <a href="href=mailto:howardcyclingclub@gmail.com">howardcyclingclub@gmail.com</a>
 -->

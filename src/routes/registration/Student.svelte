@@ -26,11 +26,7 @@
     <div class="div-block">
         <p>MICL registration fees are collected through NICA Pit Zone at the time of registration:</p>
         <ul class="indent">
-            <li>​2023 MICL Season Registration Fee (includes 5 League fall events): <span>$275</span>​</li>
-        </ul>
-        <p>​MLCC Team Dues will be invoiced on <span class="emphasize">July 1</span> through TeamSnap:</p>
-        <ul class="indent">
-            <li>Student Athletes (includes MLCC Jersey): <span>$75</span>​</li>
+            <li>​2023 MICL Season Registration Fee (includes 5 League fall events): <span>$300</span>​</li>
         </ul>
     </div>
 </section>
@@ -39,7 +35,7 @@
         Not quite sure? We get that. Bring your bike to practice and give it a try!  
         Please fill out the <a href="https://nationalmtb.org/agreement-to-participate-and-release-of-liability-form/" target="_blank">NICA Waiver</a>, and bring it with you when you join us for one practice before needing to register.  
         If you use the NICA electronic waiver form,  please email the signed copy to 
-        <a href="mailto:bmwheeler1@verizon.net">bmwheeler1@verizon.net</a>.
+        <a href="mailto:howardcyclingclub@gmail.com">howardcyclingclub@gmail.com</a>.
     </p>
     <p class="text-center">Get ready to ride. It's gonna be sweet. Promise.</p>
 </section>
