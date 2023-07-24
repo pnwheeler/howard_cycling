@@ -17,8 +17,8 @@
     <div class="main-layout" bind:clientWidth={w}>
         {#if !mobile}
             <div class="header">
-                <h1 class="decorative-shadow" transition:fade={{duration: 1000}}>Howard Cycling Club</h1>
-                <img transition:fly={{duration: 1000, delay: 300, x: 100}} src='/img/HowardLion_Vectorized.png' alt="logo"/>
+                <h1 class="decorative-shadow" in:fade={{duration: 1000}}>Howard Cycling Club</h1>
+                <img in:fly={{duration: 1000, delay: 300, x: 100}} src='/img/HowardLion_Vectorized.png' alt="logo"/>
             </div>
         {/if}
         <Navbar mobile={mobile} open={open}/>

@@ -1,17 +1,36 @@
 <h2 class="pg-name-variant">Home</h2>
 <div class="home-container">
-	<img class="large-img div-block" src="./img/mountain_bikers.jpg" alt="Mountain bikers" />
+	<img class="large-img div-block" src="./img/KHOPSHOOTS_HD_4.jpg" alt="Mountain bikers" />
 	<section class="news center">
-		<h3>Welcome!</h3>
-		<h4 class="text-left">
-			Welcome to the <em class="emphasize">NEW</em> Howard Cycling Club designed for high school students
+		<h4 class="welcome">
+			Welcome to the homepage for Howard Cycling Club, a <em class="emphasize">new</em> team created for students
 			attending Howard High School.
 		</h4>
-		<br>
+	</section>
+	<section class="div-block" style="width: 100%">
+		<hr />
+		<h2 class="heading-break">Howard Cycling Club Mission</h2>
+		<h4 class="center">
+			We build youth, character, and fitness through off-road cycling adventures. And we have fun.
+			<em>Lots and lots of fun!</em>
+		</h4>
+		<hr />
+	</section>
+	<section class="info pane">
+		<div class="div-block center" id="mission">
+			<img src="/img/NICA_MD.png" alt="MD NICA logo" id="nica-logo" style="place-self: center;"/>
+			<p>
+				Howard Cycling Club is a new youth mountain bike team participating in the Maryland
+				Interscholastic Cycling League (MICL). MICL provides a fun, safe and high-quality mountain
+				biking program for students in grades 9 to 12. With the cooperation of our partners and our
+				sponsors, MICL provides a competitive mountain bike youth racing experience.
+			</p>
+		</div>
 		<iframe
-			width="560" 
-			height="315" 
+			width="480"
+			height="270"
 			class="iframe-embed"
+			
 			src="https://www.youtube-nocookie.com/embed/vYl-TwOqXj4"
 			title="YouTube video player"
 			frameborder="0"
@@ -19,25 +38,7 @@
 			allowfullscreen
 		/>
 	</section>
-	<section class="div-block" style="width: 100%">
-		<hr />
-		<h2 class="heading-break">Howard Cycling Club Mission</h2>
-		<hr />
-	</section>
-	<section class="div-block text-center" id="mission">
-		<p>
-			We build youth, character, and fitness through off-road cycling adventures. And we have fun.
-			<em>Lots and lots of fun!</em>
-		</p>
-		<img src="/img/NICA_MD.png" alt="MD NICA logo" id="nica-logo" />
-		<p>
-			The Howard Cycling Club is a new youth mountain bike team participating in the Maryland
-			Interscholastic Cycling League (MICL). MICL provides a fun, safe and high-quality mountain
-			biking program for students in grades 9 to 12. With the cooperation of our partners and our
-			sponsors, MICL provides a competitive mountain bike youth racing experience.
-		</p>
-	</section>
-	<section class="nica-info border-blue pane bg-dark">
+	<section class="info border-blue pane bg-dark">
 		<iframe
 			width="480"
 			height="270"
@@ -46,7 +47,6 @@
 			title="YouTube video player"
 			frameborder="0"
 			referrerpolicy="strict-origin-when-cross-origin"
-			
 			allowfullscreen
 		/>
 		<div class="div-block" id="nica-message">
@@ -98,6 +98,9 @@
 	h3 {
 		color: var(--color-lighter);
 	}
+	.welcome{
+		text-shadow: 1px 1px var(--color-blue);
+	}
 	.home-container {
 		display: flex;
 		flex-direction: column;
@@ -114,19 +117,20 @@
 	#mission {
 		align-items: center;
 		width: min(100%, 700px);
+		display: grid;
 	}
 	#mission > img {
 		width: 50%;
-		max-width: 80vw;
+		max-width: 350px;
 	}
 	.heading-break {
 		font-variation-settings: var(--font-decorative);
 		text-transform: uppercase;
 		color: var(--color-lighter);
-		font-size: min(var(--size-step-3), 5.5vw);
+		font-size: min(var(--size-step-3), 7vw);
 		text-align: center;
 	}
-	.nica-info {
+	.info {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1em;
@@ -156,7 +160,7 @@
 		padding-block: 1em;
 	}
 	@media (max-width: 900px) {
-		.nica-info {
+		.info {
 			grid-template-columns: auto;
 			gap: 1em;
 		}

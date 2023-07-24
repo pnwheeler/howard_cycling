@@ -36,7 +36,7 @@
         display: grid;
         grid-template-columns: repeat(3, 200px);
         justify-content: center;
-        padding-top: 1em;
+        padding-block: 0.5em;
         place-items: center;
         font-size: 1.3em;
     }

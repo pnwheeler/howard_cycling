@@ -13,5 +13,5 @@
         Licensing on the <a href="https://marylandmtb.org/coaches-wanted" target="_blank">MICL Webpage</a>. 
     </li>
 </ul>
-<p>​Howard Cycling Club Team Dues will be invoice on July 1 through TeamSnap:</p>
+<p>​Howard Cycling Club Team Dues will be invoice on July 1 through TeamApp:</p>
 <ul><li>Coaches (includes Howard Cycling Club Jersey): $50</li></ul>

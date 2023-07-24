@@ -12,8 +12,8 @@ const StudentInstructions = create_ssr_component(($$result, $$props, $$bindings,
             <li>Parent contant information: name, phone #, &amp; email</li></ul>
         <li>A coach will send you an invite from NICA Pitzone.</li>
         <li>Use the link in the email you received from NICA Pitzone, fill out the registration, and registration pay the fees to NICA.</li>
-        <li>Our Membership committee will add you to TeamSnap for emails and communication.</li>
-        <li>Team dues will be collected through TeamSnap after registration is completed.</li></ol></div>`;
+        <li>Our Membership committee will add you to TeamApp for emails and communication.</li>
+        <li>Team dues will be collected through TeamApp after registration is completed.</li></ol></div>`;
 });
 const Student_svelte_svelte_type_style_lang = "";
 const css$2 = {
@@ -40,7 +40,7 @@ const Student = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     </p>
     <div class="div-block"><p>MICL registration fees are collected through NICA Pit Zone at the time of registration:</p>
         <ul class="indent"><li>​2023 MICL Season Registration Fee (includes 5 League fall events): <span>$275</span>​</li></ul>
-        <p>​Howard Cycling Club Team Dues will be invoiced on <span class="emphasize">July 1</span> through TeamSnap:</p>
+        <p>​Howard Cycling Club Team Dues will be invoiced on <span class="emphasize">July 1</span> through TeamApp:</p>
         <ul class="indent"><li>Student Athletes (includes Howard Cycling Club Jersey): <span>$75</span>​</li></ul></div></section>
 <section class="div-block span-70 text-left svelte-i9hu5c"><p>Not quite sure? We get that. Bring your bike to practice and give it a try!  
         Please fill out the <a href="https://nationalmtb.org/agreement-to-participate-and-release-of-liability-form/" target="_blank">NICA Waiver</a>, and bring it with you when you join us for one practice before needing to register.  
@@ -55,8 +55,8 @@ const CoachInstructions = create_ssr_component(($$result, $$props, $$bindings, s
   return `<div class="border-blue pane bg-dark"><ol><li>Send an email to the team at [EMAIL] and we will send you a coaches invite to register.</li>
         <li>One of the head coaches will send you an invite from NICA Pitzone to complete the signup.</li>
         <li>Use the link in the email you received from NICA Pitzone, fill out the registration, and registration pay the fees to NICA</li>
-        <li>Our Membership committee will add you to TeamSnap for emails and communication.</li>
-        <li>Team dues will be collected through TeamSnap.</li></ol></div>`;
+        <li>Our Membership committee will add you to TeamApp for emails and communication.</li>
+        <li>Team dues will be collected through TeamApp.</li></ol></div>`;
 });
 const Coach_svelte_svelte_type_style_lang = "";
 const css$1 = {
